@@ -1,0 +1,15 @@
+﻿@page
+@model Login.Pages.LoginPassModel
+@{
+}
+
+<div>
+    <form method="post">
+        <input type="text" name="userInput" />
+        <button type="submit">Submit</button>
+    </form>
+</div>
+@if (!string.IsNullOrEmpty(Model.UserInput))
+{
+    <p>Введений текст: @Model.UserInput</p>
+}
